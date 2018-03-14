@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-      <script type="text/javascript" src="bundle.js"></script>
       <title>World of Codecraft</title>
     </head>
   <body>
+    <div class="container">
+      <h1>Create Your Character!</h2>
+        <form class="form-container" action="index.html" method="post">
+          <label for="playerName">Player Name:</label>
+          <input type="text" name="playerName" class="form-control">
+          <br>
+          <select class="opAbility" name="opAbility">
+            <option disabled selected>-select-</option>
+            <option value="op1">Hot Dog DB (backend +5)</option>
+            <option value="op2">Fidora, neckbeard, m'lady ensemble (charm +5) </option>
+            <option value="op3">Expose sock game (hip +5)</option>
+            <option value="op4">Power of the Jumbotron (frontend +5)</option>
+            <option value="op5">Sign out early (mooch +5)</option>
+          </select>
+          <br><br>
+          <button type="button" name="button" class="btn btn-info">+</button> <button type="button" name="button" class="btn btn-info">-</button>
+          <br><br>
+          <button type="submit" name="button" class="btn btn-danger">Create!</button>
+        </form>
+    </div>
   </body>
 </html>
