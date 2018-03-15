@@ -12,14 +12,13 @@
           <br>
           <select class="opAbility" id="opAbility" name="opAbility">
             <option disabled selected>-select-</option>
-            <option value=1 id="op1">Hot Dog DB (backend +5)</option>
-            <option value=2 id="op2">Fidora, neckbeard, m'lady ensemble (charm +5) </option>
-            <option value=3 id="op3">Expose sock game (hip +5)</option>
-            <option value=4 id="op4">Power of the Jumbotron (frontend +5)</option>
-            <option value=5 id="op5">Sign out early (mooch +5)</option>
+            <option value="op1" id="op1">Hot Dog DB (backend +5)</option>
+            <option value="op2" id="op2">Fidora, neckbeard, m'lady ensemble (charm +5) </option>
+            <option value="op3" id="op3">Expose sock game (hip +5)</option>
+            <option value="op4" id="op4">Power of the Jumbotron (frontend +5)</option>
+            <option value="op4" id="op5">Sign out early (mooch +5)</option>
           </select>
-          <br><br>
-          <h3>Stat Points:</h3>
+          <br>
           <h3 id="statPoints"></h3>
             <label for="frontEndStat">Front-End Power</label>
             <input type="number" name="frontEnd" id="frontEnd" class="form-control">
@@ -38,6 +37,14 @@
             <br>
             <button type="submit" name="button" class="btn btn-danger">Create!</button>
           </form>
+          <div class="display">
+            <h4>Player Name: <span id="showName"></span></h4>
+            <h4>Front-End Power: <span id="showFrontEnd"></span></h4>
+            <h4>Back-End Power: <span id="showBackEnd"></span></h4>
+            <h4>Mooch Power: <span id="showMooch"></span></h4>
+            <h4>Hip Power: <span id="showHip"></span></h4>
+            <h4>Charm Power: <span id="showCharm"></span></h4>
+          </div>
         </div>
   </body>
 </html>
