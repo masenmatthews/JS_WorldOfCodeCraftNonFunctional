@@ -4,13 +4,19 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-$(document).ready(function(event) {
-  event.preventDefault();
+$(document).ready(function() {
+  $("#formSubmit").submit(function(event){
     let playerName = $("#playerName").val();
-    let opAbility = $("#opAbility").val();
-    let frontEnd = $("#frontEnd").val();
-    let backEnd =  $("#backEnd").val();
-    let mooch = $("#mooch").val();
-    let hip = $("#hip").val();
-    let charm = $("#charm").val();
+    let opAbility = parseInt($("#opAbility").val());
+    let frontEnd = parseInt($("#frontEnd").val());
+    let backEnd =  parseInt($("#backEnd").val());
+    let mooch = parseInt($("#mooch").val());
+    let hip = parseInt($("#hip").val());
+    let charm = parseInt($("#charm").val());
+
+    let player = new Player(playerName, opAbility, frontEnd, backEnd, mooch, hip, charm);
+    let result = player.newPlayer();
+    event.preventDefault();
+
+  });
 });
