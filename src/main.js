@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
   $("#formSubmit").submit(function(event){
+    event.preventDefault();
     let playerName = $("#playerName").val();
     let opAbility = $("#opAbility").val();
     let frontEnd = parseInt($("#frontEnd").val());
@@ -17,15 +18,13 @@ $(document).ready(function() {
     let player = new Player(playerName, opAbility, frontEnd, backEnd, mooch, hip, charm);
     let result = player.newPlayer(playerName, opAbility, frontEnd, backEnd, mooch, hip, charm);
 
-
+    alert(backEnd);
+    $("#showName").text(playerName);
+    $("#showFrontEnd").text(frontEnd);
+    $("#showBackEnd").text(result.backEnd);
+    $("#showMooch").text(mooch);
+    $("#showHip").text(hip);
+    $("#showCharm").text(charm);
     $(".display").show();
-    $("#showName").append(playerName);
-    $("#showFrontEnd").append(frontEnd);
-    $("#showBackEnd").append(backEnd);
-    $("#showMooch").append(mooch);
-    $("#showHip").append(hip);
-    $("#showCharm").append(charm);
-    event.preventDefault();
-
   });
 });
