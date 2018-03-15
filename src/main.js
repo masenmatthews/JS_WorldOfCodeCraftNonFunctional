@@ -6,12 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function(event) {
   event.preventDefault();
-  $('.add').click(function(statPoints, frontEndStat){
-    let statPoints = 20
-        frontEndStat += 1;
-
-  }
-  $('.subctract'.click(function(){
-
-
-  }
+    let playerName = $("#playerName").val();
+    let opAbility = $("#opAbility").val();
+    let frontEnd = $("#frontEnd").val();
+    let backEnd =  $("#backEnd").val();
+    let mooch = $("#mooch").val();
+    let hip = $("#hip").val();
+    let charm = $("#charm").val();
+});

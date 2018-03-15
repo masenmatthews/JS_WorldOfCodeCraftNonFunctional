@@ -8,39 +8,34 @@
       <h1>Create Your Character!</h2>
         <form class="form-container" action="index.html" method="post">
           <label for="playerName">Player Name:</label>
-          <input type="text" name="playerName" class="form-control">
+          <input type="text" id="playerName" name="playerName" class="form-control">
           <br>
-          <select class="opAbility" name="opAbility">
+          <select class="opAbility" id="opAbility" name="opAbility">
             <option disabled selected>-select-</option>
-            <option value="op1">Hot Dog DB (backend +5)</option>
-            <option value="op2">Fidora, neckbeard, m'lady ensemble (charm +5) </option>
-            <option value="op3">Expose sock game (hip +5)</option>
-            <option value="op4">Power of the Jumbotron (frontend +5)</option>
-            <option value="op5">Sign out early (mooch +5)</option>
+            <option value=1 id="op1">Hot Dog DB (backend +5)</option>
+            <option value=2 id="op2">Fidora, neckbeard, m'lady ensemble (charm +5) </option>
+            <option value=3 id="op3">Expose sock game (hip +5)</option>
+            <option value=4 id="op4">Power of the Jumbotron (frontend +5)</option>
+            <option value=5 id="op5">Sign out early (mooch +5)</option>
           </select>
           <br><br>
           <h3>Stat Points:</h3>
           <h3 id="statPoints"></h3>
             <label for="frontEndStat">Front-End Power</label>
-            <h4 id="frontEnd"></h4>
-            <button type="button" name="button" id="subFront" class="subtract btn btn-info">-</button> <button type="button" name="button" id="addFront" class="add modifier btn btn-info">+</button>
-            <br><br>
+            <input type="number" name="frontEnd" id="frontEnd" class="form-control">
+            <br>
             <label for="backEndStat">Back-End Power</label>
-            <h4 id="backEnd"></h4>
-            <button type="button" name="button" id="subBack" class="subtract btn btn-info">-</button> <button type="button" name="button" id="addBack" class="add btn btn-info">+</button>
-            <br><br>
+            <input type="number" name="backEnd" id="backEnd" class="form-control">
+            <br>
             <label for="mooch">Mooch Power</label>
-            <h4 id="mooch"></h4>
-            <button type="button" name="button" id="subMooch" class="subtract btn btn-info">-</button> <button type="button" name="button" id="addMooch" class="add btn btn-info">+</button>
-            <br><br>
+            <input type="number" name="mooch" id="mooch" class="form-control">
+            <br>
             <label for="hipStat">Hip Power</label>
-            <h4 id="hip"></h4>
-            <button type="button" name="button" id="subHip" class="subtract btn btn-info">-</button> <button type="button" name="button" id="addHip" class="add btn btn-info">+</button>
-            <br><br>
+            <input type="number" name="hip" id="hip" class="form-control">
+            <br>
             <label for="charmStat">Charm Power</label>
-            <h4 id="charm"></h4>
-            <button type="button" name="button" id="subCharm" class="subtract btn btn-info">-</button> <button type="button" name="button" id="addCharm" class="add btn btn-info">+</button>
-            <br><br>
+            <input type="number" name="charm" id="charm" class="form-control">
+            <br>
             <button type="submit" name="button" class="btn btn-danger">Create!</button>
           </form>
   </div>
